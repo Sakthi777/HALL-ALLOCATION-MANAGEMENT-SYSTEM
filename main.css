@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+/*--------------------- comman styling ------------------*/
+
+*{
+    font-family: 'Libre Baskerville', serif;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    outline:none;
+    list-style: none;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color:grey;
+    font-family: 'Zilla Slab', serif;
+}
+.navbar_items a:hover{
+    color: grey;
+    font-size:13px;
+    
+}
+
+/*------------------- EMPTY NAVBAR ------------------*/
+
+.empty{
+    height: 10px;
+    width:100%;
+    background: -webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height:100px;
+    background-color:white;
+}
+
+/*------------------------ TITLE ------------------------------*/
+
+.logo a{
+    color: grey;
+    font-size: 32px;
+    font-family: 'Allura', cursive;
+    font-weight: 600;
+
+}
+
+/*------------------------ LOGOS ------------------------------*/
+
+.navbar .logo_items ul{
+    display:flex;   
+}
+.navbar .logo_items ul li{
+    margin: 0 20px;
+    padding-left:10px;
+    cursor: pointer;
+}
+.navbar_items ul li{
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+.navbar_items ul li a{
+    color:white;
+    font-size: 15px;
+    padding-left: 15px;
+    font-family:'Zilla Slab', serif;
+    font-weight: 600;
+}
+.navbar_items ul{
+    display:flex;
+    align-items:right;
+    padding-left:80px;
+}
+.navbar_items{
+    padding-top:7px;
+    height: 35px;
+    background:-webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+    text-align: center;
+}
+
+
+/*------------------------ IMAGE ------------------------------*/
+
+.image{
+    background: url("image/project.jpg") no-repeat top center;
+    background-size:cover;
+    height:420px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image_contact{
+    text-align: center;
+    color:white;
+    transform:translate(-50%);
+}
+.image_contact  h1{
+    text-transform: uppercase;
+    margin-top: 55px;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.image_contact  h1 span{
+    color:turquoise;
+}
+
+
+/*------------------------ SEARCH FOR BUTTON ------------------------------*/
+
+.image_contact #button{
+    display:block;
+    width: 150px;
+    height:40px;
+    background: -webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+    line-height:30px;
+    margin: 0px auto;
+    color:white;
+    text-align:center;
+    margin-bottom:5px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+.submit:hover{
+    background: -webkit-linear-gradient(left,rgba(51, 225, 231, 0.966),rgba(7, 155, 155, 0.637));
+}
+#button:hover{
+    font-size: small;
+    background: -webkit-linear-gradient(left,rgba(51, 225, 231, 0.966),rgba(7, 155, 155, 0.637));
+}
+
+/*------------------------ SEARCH FOR BUTTON AND RIGISTERATION FORM ------------------------------*/
+
+.cont1,.cont2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+    position: relative;
+}
+.reg,.search{
+    position: relative;
+    width:700px;
+    height:550px;
+    padding: 10px 30px;
+    background-color:white;
+    overflow: hidden;
+}
+.reg{
+    height:98.5%;
+}
+.register_btn{
+    margin-top: -25px;
+}
+.reg h2{
+    width: 100%;
+    font-size:22px;
+    padding-top: 2px;
+    text-align:center;
+    letter-spacing:3px;
+    margin-top:-10px;
+    margin-bottom:0px;
+    color:rgba(7, 206, 186, 0.925);
+    font-family: 'Poppins', sans-serif;
+}
+label{
+    display:block;
+    width:260px;
+    margin:17px auto;
+    padding-bottom: 20px;
+}
+label span{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(117, 112, 112);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/*------------------------ SEARCH FOR BUTTON AND RIGISTERATION FORM STYLES ------------------------------*/
+
+
+input,button{
+    border: none;
+    outline: none;
+    background: none;
+}
+.select{
+    margin-bottom: 5px;
+}
+select{
+    -webkit-appearance:none;
+    border: 1px solid #505f75;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+    border-color:   rgba(109,93,93,0.4) ;
+    color: rgba(0, 0, 0, 0.76);
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+}
+input,textarea{
+    display:block;
+    width: 250px;
+    margin-top:7px;
+    margin-bottom:-5px;
+    font-size:17px;
+    padding-bottom:0px;
+    border-bottom:1px solid rgba(109,93,93,0.4) ;
+    padding-left: 15px;
+    font-size:15px;
+    resize: none;
+    font-weight: bold;
+    border-color:  rgba(109,93,93,0.4) ;
+    font-family:'Libre Baskerville', serif;
+    color: rgba(0, 0, 0, 0.76);
+    text-transform:lowercase;
+}
+
+textarea{
+    width:270px;
+    margin-bottom: 0px;
+
+}
+#register_no,#id{
+    text-transform: uppercase;
+}
+option{
+    font-weight:600;
+    font-family: 'Libre Baskerville', serif;
+    color: rgba(0, 0, 0, 0.76);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+/*------------------------ SUBMIT BUTTON STYLE------------------------------*/
+.submit{
+    display:block;
+    width:180px;
+    height:35px;
+    background: -webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+    line-height:20px;
+    margin: 0px auto;
+    color:white;
+    text-align:center;
+    margin-bottom:7px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top:3px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    padding-bottom:-2px;
+    padding-left:0px;
+    outline:none;
+    }
+
+/*------------------------ SEARCH FOR BUTTON AND RIGISTERATION VALIDATION  ------------------------------*/
+
+
+#icon_name,#icon_id,#icon_email{
+    color: turquoise;
+    visibility:hidden;
+}
+.meg{
+    margin-bottom: 20px;
+    letter-spacing: px;
+    margin-left: 26%;
+    width: 54%;
+    height: 0px;
+    background:tomato;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+    transition: a11 0.5s ease;
+}
+input:hover{
+    border-bottom: 2px solid turquoise;
+}
+
+/*------------------------ BLOG ------------------------------*/
+
+.blog{
+    background-color:white;
+    width: 100%;
+    height: 100vh;
+}
+.blog_wrapper .blog0{
+    display: flex;
+}
+
+.blog_contact{
+    border:2px solid turquoise;
+    width:24%;
+    margin-right:2.5%;
+    text-align: center;
+    border-radius: 3px;
+}
+.blog1{
+    display: flex;
+    margin-top:35px;
+    justify-content: space-around;
+}
+.blog2{
+    display: flex;
+    margin-top:35px;
+    justify-content: space-around;
+}
+i{
+    margin-bottom:10px;
+}
+h2{
+    margin-top: 5px;
+    margin-bottom:10px;
+    width: 100%;
+    font-size:25px;
+    text-align:center;
+    color:rgba(7, 206, 186, 0.925);
+    font-family: 'Poppins', sans-serif;
+}
+.blog_contact:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.blog .title{
+    widows: 100px;
+    font-size:30px;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:20px;
+    color:rgba(7, 206, 186, 0.925);
+    text-transform: uppercase;
+}
+
+/*------------------------ CONTACT US ------------------------------*/
+
+.contact_us{
+    background-color: white;   
+}
+.cont_wrepper .contact{
+    display: flex
+}
+.cont_contact{
+    
+    width: 30%;
+    margin-right: 2.5%;
+    margin-left:20px;
+    text-align: center;
+    background-color: turquoise;
+    border-radius: 3px;
+}
+.contact{
+    display: flex;
+    margin-top:35px;
+    justify-content: space-around;
+    
+}
+
+/*------------------------ FOOTER ------------------------------*/
+
+.space{
+    height:80px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding:20px;
+    
+}
+.footer a{
+    color:white;
+    font-family:sans-serif;
+}
+
+
+
+
+
+
+.style{
+    text-align: center;
+    margin-top:20px;
+    border:1px solid ;
+    width:80%;
+    border-radius:4px;
+    margin-left:70px;
+    padding-top:14px;
+    height:10%;
+    background:-webkit-linear-gradient(left,rgba(7, 155, 155, 0.637),rgba(51, 225, 231, 0.966));
+    color: white;
+    text-align: center;
+}
+
+#bold{
+    font-size:19px;
+}
+#error{
+    background:tomato;
+    font-size: 18px;
+    transition: a11 0.5s ease;
+
+}
+.register_btn{
+    margin-top:-25px;
+}
+.submit:hover{
+    font-size:13px;
+    }
